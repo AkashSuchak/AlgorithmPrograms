@@ -13,6 +13,7 @@ namespace AlgorithmPrograms
 
             //Display Message            
             Console.WriteLine("Press - 1. Binary Search");
+            Console.WriteLine("Press - 2. Insertion Sort ");
             Console.WriteLine("Press - 0. Exit");
             Console.WriteLine("-----------------------------");
             Console.WriteLine("Enter your choice number : ");
@@ -26,6 +27,13 @@ namespace AlgorithmPrograms
                     Console.WriteLine("----------------------------------");
                     BinarySearch binarySearch = new BinarySearch();
                     binarySearch.inputArray();
+                    break;
+
+                case 2:
+                    Console.WriteLine(":: Insertion Sort ::");
+                    Console.WriteLine("----------------------------------");
+                    InsertionSort insertionSort = new InsertionSort();
+                    insertionSort.TakeFileData();
                     break;
                 default:
                     Console.WriteLine(" Invalid number..");
