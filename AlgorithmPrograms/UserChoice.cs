@@ -14,6 +14,7 @@ namespace AlgorithmPrograms
             //Display Message            
             Console.WriteLine("Press - 1. Binary Search");
             Console.WriteLine("Press - 2. Insertion Sort ");
+            Console.WriteLine("Press - 2. Bubble Sort ");
             Console.WriteLine("Press - 0. Exit");
             Console.WriteLine("-----------------------------");
             Console.WriteLine("Enter your choice number : ");
@@ -34,6 +35,12 @@ namespace AlgorithmPrograms
                     Console.WriteLine("----------------------------------");
                     InsertionSort insertionSort = new InsertionSort();
                     insertionSort.TakeFileData();
+                    break;
+                case 3:
+                    Console.WriteLine(":: Bubble Sort ::");
+                    Console.WriteLine("----------------------------------");
+                    BubbleSort bubbleSort = new BubbleSort();
+                    bubbleSort.TakeFileData();
                     break;
                 default:
                     Console.WriteLine(" Invalid number..");
