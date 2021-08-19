@@ -16,6 +16,7 @@ namespace AlgorithmPrograms
             Console.WriteLine("Press - 2. Binary Search");
             Console.WriteLine("Press - 3. Insertion Sort ");
             Console.WriteLine("Press - 4. Bubble Sort ");
+            Console.WriteLine("Press - 5. Anagram Detection");
             Console.WriteLine("Press - 0. Exit");
             Console.WriteLine("-----------------------------");
             Console.WriteLine("Enter your choice number : ");
@@ -51,6 +52,13 @@ namespace AlgorithmPrograms
                     Console.WriteLine("----------------------------------");
                     BubbleSort bubbleSort = new BubbleSort();
                     bubbleSort.TakeFileData();
+                    break;
+
+                case 5:
+                    Console.WriteLine(":: Anagram Detection ::");
+                    Console.WriteLine("----------------------------------");
+                    Anagram anagram = new Anagram();
+                    anagram.UserInput();
                     break;
                 default:
                     Console.WriteLine(" Invalid number..");
