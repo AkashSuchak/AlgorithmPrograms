@@ -28,9 +28,15 @@ namespace AlgorithmPrograms
                     String str = "ABC";
                     int n = str.Length;
                     Console.WriteLine(":: Permutation Of String - {0} ::", str);
+                    Console.WriteLine("Recursive Manner ::");
                     Console.WriteLine("----------------------------------");
                     Permutation permutation = new Permutation();                    
                     permutation.Permute(str, 0, n - 1);
+                    Console.WriteLine("----------------------------------");
+                    Console.WriteLine(":: Permutation Of String - {0} ::", str);
+                    Console.WriteLine("Iterative Manner ::");
+                    Console.WriteLine("----------------------------------");
+                    permutation.IterationPermutation(str);
                     break;
 
                 case 2:
